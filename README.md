@@ -119,12 +119,16 @@ Check a job:
 Invoke-RestMethod http://127.0.0.1:8787/jobs/<job-id>
 ```
 
-## Command Name And npm `tele`
+## Command Name, npm `tele`, And PyPI `tgdl`
 
 This repository is not the npm package named `tele`, and it is not affiliated
 with that package. This project includes `tgdl` and `telegram-agent-downloader`
 as the preferred command names. It also keeps `tele` as a convenience alias for
 local use.
+
+This repository is also not the PyPI package `tgdl` listed at
+`https://getsafety.com/packages/pypi/tgdl`, and it is not affiliated with that
+package or its maintainers.
 
 If you also use another npm package that installs a `tele` command, prefer one
 of these approaches:
@@ -175,7 +179,8 @@ account/session files.
 ## Disclaimer
 
 This project is an unofficial local automation tool. It is not affiliated with
-Telegram, Microsoft Edge, Playwright, or any npm package named `tele`.
+Telegram, Microsoft Edge, Playwright, any npm package named `tele`, or the PyPI
+package `tgdl` listed at `https://getsafety.com/packages/pypi/tgdl`.
 
 Use it only for content you have the right, consent, and legal basis to access
 and store. Do not use it for non-consensual, underage, exploitative,
