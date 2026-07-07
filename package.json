@@ -1,0 +1,39 @@
+{
+  "name": "telegram-agent-downloader",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent-friendly Telegram media downloader powered by Edge profile cloning and Playwright.",
+  "license": "MIT",
+  "main": "src/server.js",
+  "bin": {
+    "tgdl": "src/tele.js",
+    "telegram-agent-downloader": "src/tele.js",
+    "tele": "src/tele.js"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "DISCLAIMER.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "bootstrap-profile": "node src/cli.js bootstrap-profile",
+    "download": "node src/tele.js",
+    "pack:check": "npm pack --dry-run",
+    "probe": "node src/cli.js probe",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "telegram",
+    "downloader",
+    "playwright",
+    "edge",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "playwright-core": "^1.59.1"
+  }
+}

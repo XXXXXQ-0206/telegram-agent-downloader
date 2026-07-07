@@ -1,0 +1,15 @@
+downloads/
+runtime/
+node_modules/
+.server.pid
+
+*.log
+*.pid
+*.tmp
+*.tgz
+
+.env
+.env.*
+
+.git/
+.github/
