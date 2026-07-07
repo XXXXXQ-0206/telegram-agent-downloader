@@ -77,9 +77,10 @@ async function handleRequest(request, response) {
 
     sendJson(response, 404, { ok: false, error: "Route not found." });
   } catch (error) {
+    console.error(error);
     sendJson(response, 500, {
       ok: false,
-      error: error instanceof Error ? error.message : String(error),
+      error: "Internal server error.",
     });
   }
 }

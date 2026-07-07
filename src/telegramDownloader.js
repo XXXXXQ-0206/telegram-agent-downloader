@@ -21,6 +21,14 @@ const LOGIN_HINTS = [
   /log in by phone number/i,
 ];
 
+function isWebkTelegramUrl(rawUrl) {
+  try {
+    return new URL(rawUrl).hostname === "webk.telegram.org";
+  } catch {
+    return false;
+  }
+}
+
 function parseTelegramMessageUrl(rawUrl) {
   const url = new URL(rawUrl);
   const segments = url.pathname.split("/").filter(Boolean);
@@ -189,8 +197,8 @@ async function waitForMessageBubble(page, messageId, timeoutMs) {
     try {
       await bubble.waitFor({ state: "visible", timeout: timeoutMs });
       return bubble;
-    } catch (error) {
-      lastError = error;
+    } catch {
+      // The message may be represented by an album item instead of a bubble.
     }
 
     const groupedItem = page.locator(`.album-item.grouped-item[data-mid="${candidateId}"]`).first();
@@ -1855,7 +1863,7 @@ async function downloadWebkAlbumMedia(page, bubble, target, job, downloadDir, bu
 async function downloadWebTelegramVideo(page, target, job, downloadDir) {
   await openTelegramMessageInWebk(page, target, job.timeoutMs);
 
-  if (!page.url().includes("webk.telegram.org")) {
+  if (!isWebkTelegramUrl(page.url())) {
     throw new Error(`The message link did not land on webk.telegram.org. Final URL: ${page.url()}`);
   }
 
