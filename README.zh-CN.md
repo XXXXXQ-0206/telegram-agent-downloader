@@ -109,17 +109,17 @@ Invoke-RestMethod `
 Invoke-RestMethod http://127.0.0.1:8787/jobs/<job-id>
 ```
 
-## 命令名、npm 的 `tele` 与 PyPI 的 `tgdl`
+## 命令名、npm 的 `@mrgoonie/tele-cli` 与 PyPI 的 `tgdl`
 
-这个仓库不是 npm 上名为 `tele` 的那个包，也与它没有关联。本项目推荐使用 `tgdl` 或 `telegram-agent-downloader` 作为命令名，同时保留 `tele` 作为本地使用时的方便别名。
+这个仓库不是通过 `npm install -g @mrgoonie/tele-cli` 安装的 npm 项目，也与该项目及其维护者没有关联。本项目推荐使用 `tgdl` 或 `telegram-agent-downloader` 作为命令名，同时保留 `tele` 作为本地使用时的方便别名。
 
 这个仓库也不是 Safety 页面 `https://getsafety.com/packages/pypi/tgdl` 所列的 PyPI `tgdl` 包，并且与该包及其维护者没有关联。
 
-如果你还需要使用另一个会安装 `tele` 命令的 npm 包，可以这样处理：
+如果你还需要使用 `@mrgoonie/tele-cli`，可以这样处理：
 
 - 使用本项目的 `tgdl` 或 `telegram-agent-downloader` 命令。
 - 直接运行 `node src/tele.js`。
-- 保留另一个包全局安装的 `tele` 命令，不依赖本项目的 `tele` 别名。
+- 保留 `@mrgoonie/tele-cli` 全局安装的 `tele` 命令，不依赖本项目的 `tele` 别名。
 - 如果执行 `npm link` 或全局安装后，系统里的 `tele` 命令被替换，可以移除链接，改用 `tgdl`。
 
 ## 环境变量
@@ -154,7 +154,7 @@ npm pack --dry-run
 
 ## 免责声明
 
-本项目是非官方的本地自动化工具，不隶属于 Telegram、Microsoft Edge、Playwright，也不是 npm 上名为 `tele` 的包，更不是 Safety 页面 `https://getsafety.com/packages/pypi/tgdl` 所列的 PyPI `tgdl` 包。
+本项目是非官方的本地自动化工具，不隶属于 Telegram、Microsoft Edge、Playwright，也不是通过 `npm install -g @mrgoonie/tele-cli` 安装的 npm 项目，更不是 Safety 页面 `https://getsafety.com/packages/pypi/tgdl` 所列的 PyPI `tgdl` 包。
 
 请只把它用于你有权访问、有权保存，并且符合法律与同意要求的内容。不要把它用于非自愿、未成年人、剥削性、侵权或其他违法内容。
 

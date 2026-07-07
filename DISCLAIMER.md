@@ -9,7 +9,8 @@ legal basis to do so. Do not use it for non-consensual, underage, exploitative,
 copyright-infringing, or otherwise illegal content.
 
 The authors and contributors are not affiliated with Telegram, Microsoft Edge,
-Playwright, any npm package named `tele`, or the PyPI package `tgdl` listed at
+Playwright, the npm project installed with
+`npm install -g @mrgoonie/tele-cli`, or the PyPI package `tgdl` listed at
 `https://getsafety.com/packages/pypi/tgdl`. The software is provided as-is,
 without warranty, and the maintainers are not responsible for user-downloaded
 content, account restrictions, terms-of-service violations, or data loss.

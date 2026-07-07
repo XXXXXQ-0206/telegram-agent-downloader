@@ -119,24 +119,24 @@ Check a job:
 Invoke-RestMethod http://127.0.0.1:8787/jobs/<job-id>
 ```
 
-## Command Name, npm `tele`, And PyPI `tgdl`
+## Command Name, npm `@mrgoonie/tele-cli`, And PyPI `tgdl`
 
-This repository is not the npm package named `tele`, and it is not affiliated
-with that package. This project includes `tgdl` and `telegram-agent-downloader`
-as the preferred command names. It also keeps `tele` as a convenience alias for
-local use.
+This repository is not the npm project installed with
+`npm install -g @mrgoonie/tele-cli`, and it is not affiliated with that project
+or its maintainers. This project includes `tgdl` and
+`telegram-agent-downloader` as the preferred command names. It also keeps
+`tele` as a convenience alias for local use.
 
 This repository is also not the PyPI package `tgdl` listed at
 `https://getsafety.com/packages/pypi/tgdl`, and it is not affiliated with that
 package or its maintainers.
 
-If you also use another npm package that installs a `tele` command, prefer one
-of these approaches:
+If you also use `@mrgoonie/tele-cli`, prefer one of these approaches:
 
 - Use this project as `tgdl` or `telegram-agent-downloader`.
 - Run this project directly with `node src/tele.js`.
-- Keep the other package's `tele` command installed globally, and avoid relying
-  on this project's `tele` alias.
+- Keep `@mrgoonie/tele-cli`'s global `tele` command installed, and avoid
+  relying on this project's `tele` alias.
 - If a global `tele` command changes after `npm link` or global install, remove
   the link and use `tgdl` instead.
 
@@ -179,8 +179,9 @@ account/session files.
 ## Disclaimer
 
 This project is an unofficial local automation tool. It is not affiliated with
-Telegram, Microsoft Edge, Playwright, any npm package named `tele`, or the PyPI
-package `tgdl` listed at `https://getsafety.com/packages/pypi/tgdl`.
+Telegram, Microsoft Edge, Playwright, the npm project installed with
+`npm install -g @mrgoonie/tele-cli`, or the PyPI package `tgdl` listed at
+`https://getsafety.com/packages/pypi/tgdl`.
 
 Use it only for content you have the right, consent, and legal basis to access
 and store. Do not use it for non-consensual, underage, exploitative,
