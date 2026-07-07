@@ -1,5 +1,9 @@
 # Telegram Agent Downloader
 
+<p align="right">
+  <a href="README.zh-CN.md"><img alt="中文 README" src="https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87-blue"></a>
+</p>
+
 Agent-friendly local Telegram media downloader powered by Playwright and a
 cloned Microsoft Edge profile.
 
