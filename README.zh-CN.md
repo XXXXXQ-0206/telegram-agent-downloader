@@ -8,6 +8,8 @@
 
 这个工具面向本地使用：把 Telegram 消息链接传给它，它会下载你当前 Telegram Web 登录态本来就能查看的媒体。你可以把它当作一次性 CLI 工具使用，也可以启动一个很轻量的本地 HTTP 服务，交给 agent 或脚本调度。
 
+> **维护状态：** 本项目不再维护。推荐使用替代项目 [`iyear/tdl`](https://github.com/iyear/tdl)。
+
 ## 功能
 
 - 下载公开 Telegram 消息链接里的媒体。
@@ -155,6 +157,8 @@ npm pack --dry-run
 ## 免责声明
 
 本项目是非官方的本地自动化工具，不隶属于 Telegram、Microsoft Edge、Playwright，也不是通过 `npm install -g @mrgoonie/tele-cli` 安装的 npm 项目，更不是 Safety 页面 `https://getsafety.com/packages/pypi/tgdl` 所列的 PyPI `tgdl` 包。
+
+本项目不再维护。推荐使用替代项目 [`iyear/tdl`](https://github.com/iyear/tdl)。
 
 请只把它用于你有权访问、有权保存，并且符合法律与同意要求的内容。不要把它用于非自愿、未成年人、剥削性、侵权或其他违法内容。
 

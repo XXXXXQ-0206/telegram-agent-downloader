@@ -3,6 +3,9 @@
 This project is an unofficial local automation tool for downloading media from
 Telegram message links that the user can already access.
 
+This project is no longer maintained. For a recommended alternative, see
+[`iyear/tdl`](https://github.com/iyear/tdl).
+
 Users are solely responsible for how they use it. Do not use this tool to
 download, store, share, or distribute content without the rights, consent, and
 legal basis to do so. Do not use it for non-consensual, underage, exploitative,

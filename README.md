@@ -12,6 +12,9 @@ downloads the media that your logged-in Telegram Web session can already view.
 It can run as a CLI for one-off jobs or as a tiny local HTTP service for agent
 workflows.
 
+> **Maintenance status:** This project is no longer maintained. For a
+> recommended alternative, see [`iyear/tdl`](https://github.com/iyear/tdl).
+
 ## Features
 
 - Downloads media from public Telegram message links.
@@ -182,6 +185,9 @@ This project is an unofficial local automation tool. It is not affiliated with
 Telegram, Microsoft Edge, Playwright, the npm project installed with
 `npm install -g @mrgoonie/tele-cli`, or the PyPI package `tgdl` listed at
 `https://getsafety.com/packages/pypi/tgdl`.
+
+This project is no longer maintained. For a recommended alternative, see
+[`iyear/tdl`](https://github.com/iyear/tdl).
 
 Use it only for content you have the right, consent, and legal basis to access
 and store. Do not use it for non-consensual, underage, exploitative,
