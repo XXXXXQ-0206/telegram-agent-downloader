@@ -35,6 +35,6 @@
     "node": ">=22"
   },
   "dependencies": {
-    "playwright-core": "^1.62.0"
+    "playwright-core": "^1.65.1"
   }
 }
